@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="container">
+        <form id="form">
+            <input type="Date" name="date">
+            <input type="text" name="item" placeholder="Name of item">
+            <input type="number" name="amount" placeholder="Spent Amount">
+            
+        </form>
+        <button id="submit">Add data</button>
+        <ul id="items">
+        </ul>
+    </div>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyAM1jLl-CU96hsMdyIeE6lsvBvPhDnJx7s",
+        authDomain: "expensetracker2-b7089.firebaseapp.com",
+        databaseURL: "https://expensetracker2-b7089.firebaseio.com",
+        projectId: "expensetracker2-b7089",
+        storageBucket: "expensetracker2-b7089.appspot.com",
+        messagingSenderId: "899287669870",
+        appId: "1:899287669870:web:5bd0d85d86ccf4aaf65a7f"
+    };
+
+        
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db=firebase.firestore();
+      </script>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

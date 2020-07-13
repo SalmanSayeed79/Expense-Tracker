@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand:wght@500&family=Roboto+Slab:wght@600&display=swap');
+
+//font-family: 'Russo One', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    
+    font-family: 'Bangers', cursive;
+    padding: 3vh 0;
+    letter-spacing: 3px;
+    color: rgb(52, 253, 243);
+  
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+
+    background-color: rgb(52, 253, 243);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    margin: 1vh 0 ;
+    width: 20vw;
+    height: 5vh;
+    border: 0;
+}
+form input:focus{
+    border: 0;
+    padding-bottom: 3px;
+}
+
+button{
+    width: 8vw;
+    height: 5vh;
+    margin-bottom: 02vh;
+
+    color: rgb(52, 253, 243);
+    background-color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    color:white;
+    background-color: rgb(52, 253, 243);
+}
+ul {
+    list-style: none;
+}
+li{
+    width: 60vw;
+    height: 7vh;
+    background-color: white;
+    border-bottom: 1px solid grey;
+
+    display: flex;
+ 
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+}
+li span:nth-child(1){
+    font-family: 'Roboto Slab', serif;
+}
+li span:nth-child(2){
+    font-weight: normal;
+}
+li span:nth-child(3){
+    font-family: 'Quicksand', sans-serif;
+}
+li div {
+    background-color: rgb(52, 253, 243);
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+li div:hover{
+    cursor: pointer;
+}
