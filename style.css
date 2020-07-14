@@ -117,4 +117,8 @@ li div {
 li div:hover {
   cursor: pointer;
 }
+
+.message h2 {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */

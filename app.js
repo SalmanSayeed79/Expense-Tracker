@@ -1,7 +1,9 @@
+count=0;
 db.collection('expenses').orderBy('date').onSnapshot((snapshot)=>{
     //console.log(snapshot.docChanges().type)
     snapshot.docChanges().forEach((a)=>{
         //console.log(snapshot.docChanges().type)
+        count+=parseInt(a.doc.data().amount);
         if (a.type=="added"){
         //our data will be a.doc.data()
         let data=a.doc;
@@ -61,4 +63,15 @@ addButton.addEventListener("click",(e)=>{
     form.item.value='';
     form.date.value='';
     form.amount.value='';
+})
+
+
+//showing total expense as a message
+
+let total_button=document.querySelector('#total');
+let total_show=document.querySelector(".message h2");
+
+total_button.addEventListener("click",()=>{
+    total_show.innerText=`Your total expense was: ${count}`
+    
 })
